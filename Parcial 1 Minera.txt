@@ -1,0 +1,33 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
+numero=int(input("Ingrese un numero "))
+if (numero >= 100) and (numero <= 999):
+    print ("es de 3 digitos")
+    n1 =numero// 100
+    aux1 = numero % 100
+    n2 = aux1 // 10
+    n3 = aux1 % 10
+    if (n1 < n2 < n3):
+      print ("Forma descendente es ",n3, n2, n1)
+      print ("Forma ascendente es ",n1,n2,n3)
+    if (n1 < n3 < n2):
+      print ("Forma descendente es ",n2, n3, n1)
+      print ("Forma ascendente es ",n1,n3,n2)
+    if (n2 < n1 < n3):
+      print ("Forma descendente es ",n3, n1, n2)
+      print ("Forma ascendente es ",n2,n1,n3)
+    if (n2 < n3 < n1):
+      print ("Forma descendente es ",n1, n3, n2)
+      print ("Forma ascendente es ",n2,n3,n1)
+    if (n3 < n2 < n1):
+      print ("Forma descendente es ",n1, n2, n3)
+      print ("Forma ascendente es ",n3,n2,n1)
+    if (n3 < n1 < n2):
+      print ("Forma descendente es ",n2, n1, n3)
+      print ("Forma ascendente es ",n3,n1,n2)
+      
+    else : 
+     print ("Dos o mas numeros son iguales")
+else:
+    print ("No es de 3 digitos")
