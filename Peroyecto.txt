@@ -1,0 +1,92 @@
+
+while True:
+    print("\n--- MENÚ PRINCIPAL ---")
+    print("1. Longitud")
+    print("2. Superficie")
+    print("3. Volumen")
+    print("4. Masa")
+    print("0. Salir")
+
+    opcion = input("Elige una opción: ")
+
+    if opcion == "1":
+        print("\n--- LONGITUD ---")
+        print("1. Metros a Kilómetros")
+        print("2. Kilómetros a Metros")
+
+        op = input("Elige una opción: ")
+        valor = float(input("Ingresa el valor: "))
+
+        if op == "1":
+            resultado = valor / 1000
+            print("Resultado:", resultado, "km")
+        else:
+            if op == "2":
+                resultado = valor * 1000
+                print("Resultado:", resultado, "m")
+            else:
+                print("Opción inválida")
+
+    else:
+        if opcion == "2":
+            print("\n--- SUPERFICIE ---")
+            print("1. m² a cm²")
+            print("2. cm² a m²")
+
+            op = input("Elige una opción: ")
+            valor = float(input("Ingresa el valor: "))
+
+            if op == "1":
+                resultado = valor * 10000
+                print("Resultado:", resultado, "cm²")
+            else:
+                if op == "2":
+                    resultado = valor / 10000
+                    print("Resultado:", resultado, "m²")
+                else:
+                    print("Opción inválida")
+
+        else:
+            if opcion == "3":
+                print("\n--- VOLUMEN ---")
+                print("1. Litros a Mililitros")
+                print("2. Mililitros a Litros")
+
+                op = input("Elige una opción: ")
+                valor = float(input("Ingresa el valor: "))
+
+                if op == "1":
+                    resultado = valor * 1000
+                    print("Resultado:", resultado, "ml")
+                else:
+                    if op == "2":
+                        resultado = valor / 1000
+                        print("Resultado:", resultado, "L")
+                    else:
+                        print("Opción inválida")
+
+            else:
+                if opcion == "4":
+                    print("\n--- MASA ---")
+                    print("1. Kilogramos a Gramos")
+                    print("2. Gramos a Kilogramos")
+
+                    op = input("Elige una opción: ")
+                    valor = float(input("Ingresa el valor: "))
+
+                    if op == "1":
+                        resultado = valor * 1000
+                        print("Resultado:", resultado, "g")
+                    else:
+                        if op == "2":
+                            resultado = valor / 1000
+                            print("Resultado:", resultado, "kg")
+                        else:
+                            print("Opción inválida")
+
+                else:
+                    if opcion == "0":
+                        print("Saliendo...")
+                        break
+                    else:
+                        print("Opción inválida")
